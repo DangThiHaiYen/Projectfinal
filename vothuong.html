@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Layout</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="slide.css">
+</head>
+<body>
+<div class="container" style="height:auto">
+    <header class="row">
+        <div class="col-sm-4">
+        </div>
+        <div style="background-color: lightgreen ">
+            <img class="pull-right" ; src="images/c3.jpg" width="1200px" height="200px">
+        </div>
+    </header>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar.css">
+            <a class="navbar-brand" href="http://localhost:63342/hochanh/hoc1.html?_ijt=gsb3f73l3dn7d13a3qq6g7urh"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="glyphicon glyphicon-book"></span> Sách<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"> Sách</a></li>
+                        <li><a href="#">sách bán chạy</a></li>
+                        <li><a href="#">Sách mới ra</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sách sáp ra</a></li>
+                        <li><a href="#">Nấu ăn</a></li>
+                        <li><a href="#">Trẻ con</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Buddhism</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="#"> <span class="glyphicon glyphicon-list-alt"></span> Tác giả <span
+                        class="sr-only">(current)</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tasks"></span> Tin tức </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="search">
+                </div>
+                <button type="submit" class="btn btn-default">Tìm kiếm sách</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<header class="row">
+    <div class="slideshow-container" style="width: auto">
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../anhduan/slideshow/flower.jpg" style="width: 1200px; height:300px"/>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../anhduan/slideshow/flowers.jpg" style="width:1200px;height:300px"/>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../anhduan/slideshow/sunset.jpg" style="width: 1200px; height:300px"/>
+            <div class="text"></div>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</header>
+<div class="row">
+    <article class="col-sm-12">
+        <div class="containeer">
+            <div class="jumbostron">
+                <div class="row">
+                    <div class="col-sm-8">
+
+                        <h3 style="font-size: inherit; text-align: center">
+                            <p style="font-weight: bold; font-size: 18px">Vô thường</p>
+                            <img src="../anhduan/sachbanchay/vothuong.jpg" height="400" width="310"/></h3>
+                        <p style="text-align: justify">
+                            Cuốn sách là góc nhìn đầy nhân văn của vị bác sĩ hàng ngày chứng kiến những mảnh đời chấp chới giữa hai bờ sinh tử. Con người ta sinh ra, bàn tay nắm chặt. Con người ta chết đi, hai tay buông thõng, được mất bại thành bỗng chốc hoá hư không.<br><br>
+                            "Hy sinh vì người khác luôn cho hương thơm bay ngược chiều gió. Gánh nặng vì tình yêu luôn song hành cùng sức mạnh vô song. Bất cứ gỗ đá nào chạm phải tình yêu đều trở nên bao dung mềm mại.<br><br>
+                            Tôi thấy lòng mình bỗng chật. Những gì trước đây tôi cho là đúng, bây giờ tôi đâm nghi ngờ. Những gì trước đây tôi luôn theo đuổi, giành giật để có, bây giờ thấy chẳng còn quan trọng nữa.<br><br>
+                            Những tay thét ra lửa, những tay sừng sỏ mà tôi từng kính nể, bỗng dưng tôi thấy họ bình thường. Họ cố gắng dùng đôi bàntay chứng tỏ mình, khuếch trương mình, những cái họ có được chỉ là thứ trơ trẽn. Họ không bình yên trên vật chất họ có được. Họ khoác những chiếc áo sang trọng, tay đeo đầy những kim cương, xịt toàn nước hoa hảo hạng, nhưng không bao giờ có mùi hương thanh tao, dịu ngọt, toả lan khắp bầu trời.<br><br>
+                            Tôi bị ám ảnh, vì trong tôi hoài thai một lối sống. Tôi muốn thoát khỏi bàn tay của chính mình. Tôi là người tìm kiếm bàn tay đẹp.Bàn tay biết dang ra, biết sẻ chia là bàn tay đẹp. Bàn tay biết nắm lấy tay người bất hạnh hơn mình để cùng bước là bàn tay đẹp. Bàn tay biết nâng niu, gìn giữ cái đẹp, cái chân, cái thiện, là bàn tay đẹp. Và hàng ngàn định nghĩa về bàn tay đẹp khác.Có bàn tay cầm nắm rất nhiều, có thể điều khiển người khác. Có bàn tay xoè ra ăn xin từng đồng lẻ bố thí. Có bàn tay khéo léo làm nên những tuyệt tác nghệ thuật.<br><br>
+                            Có bàn tay vụng về chỉ làm đổ vỡ mọi thứ khi chạm vào. Có bàn tay cho đi. Có bàn tay giữ lại. Nhưng khi về với đất, bàn tay nào cũng rỗng. Rỗng tuyệt đối.Vậy sao không ướp hương cho đôi tay mình, tôi tự hỏi lòng như thế. Có hàng ngàn cách ướp hương,  ướp hương thánh thiện, âm thầm, khiêm cung, bé nhỏ, mà hương thơm lại bay vượt mọi không gian.
+                            Khi sinh ra, tay tôi nắm chặt. Khi chết đi tay tôi buông thõng. Từ nắm chặt đến buông thõng, một hành trình dài đầy nụ cười hạnh phúc và nước mắt đau thương
+                            <br><br>
+                        </p>
+
+                    </div>  <!-- Brand and toggle get grouped for better mobile display end of content-->
+                    <div class="row">
+                        <aside class="col-sm-3">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-th-list"></span>
+                                    <strong>Tin tuc </strong>
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Con chim phụng cuối cùng</a>
+                                    <a href="#" class="list-group-item">Câu chuyện ít biết đằng sau nghề thiết kế sách </a>
+                                    <a href="#" class="list-group-item">Gặp Joe</a>
+
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <span class="glyphicon glyphicon-th-list"></span>
+                                    <strong>Các danh mục sách</strong>
+                                </div>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">Sách bán chạy</a>
+                                    <a href="#" class="list-group-item">Sách hay trong tháng</a>
+                                    <a href="#" class="list-group-item">Sách sắp xuất bản</a>
+                                    <a href="#" class="list-group-item">sách nấu ăn</a>
+                                    <a href="#" class="list-group-item">Sách trẻ em</a>
+                                    <a href="#" class="list-group-item">Tủ sách phật giáo</a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</article>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="jumbostron">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="container fluid">
+                        <h3> Sách liên quan</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#" class="list-group-dot">Hành trình về phương đông</a></li>
+                        <li><a href="#" class="list-group-dot">Can đảm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="panel panel-default">
+    <div class="panel-heading text-center">
+        <h3 style="background-color: lightblue;font-size:14px ">PHỤ NỮ ĐỌC SÁCH THAY ĐỔI TƯƠNG LAI - Women in Stem Project ACT &copy; 2017</h3>
+    </div>
+</footer>
+</body>
+
+</html>
